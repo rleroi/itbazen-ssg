@@ -1,0 +1,29 @@
+/* @import url(https://fonts.bunny.net/css?family=abhaya-libre:400|inter:400,500,600,700,800,900); */
+@import url(./fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply bg-light text-white;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    @apply mb-4;
+}
+
+ul {
+    @apply list-disc ml-6;
+}
+
+.container {
+    @apply w-auto max-w-screen-xl xl:mx-auto;
+    @apply px-8 md:px-16;
+}
+
+input, textarea {
+    @apply bg-light border border-border rounded-sm;
+}
