@@ -67,11 +67,13 @@ async function sendMail() {
     for(const [key, value] of Object.entries(state.mail)) {
       state.mail[key] = null;
     }
-    form.value.reset();
-    state.sent = true;
+
     if (!res.ok) {
       throw new Error(await res?.text());
     }
+
+    form.value.reset();
+    state.sent = true;
   } catch(e) {
     console.error(e.message);
     window.alert('Something went wrong, try again later or send an email to info@itbazen.com');
