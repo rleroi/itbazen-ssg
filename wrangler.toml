@@ -1,2 +1,5 @@
 compatibility_flags = [ "formdata_parser_supports_files" ]
 compatibility_date = "2023-02-04"
+
+[vars]
+NODE_VERSION="v17.9.1"
