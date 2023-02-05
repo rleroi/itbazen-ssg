@@ -97,7 +97,7 @@
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0">
         <img class="rounded-sm" alt="Webhook Router in NodeJS"
-          src="https://user-images.githubusercontent.com/6817390/216837372-a857abd0-fc63-47df-b0ef-dae3e528625f.png" />
+          src="https://user-images.githubusercontent.com/6817390/216839688-b0306e19-12fc-440f-b66b-345a36575218.png" />
       </div>
     </div>
 
@@ -177,15 +177,6 @@ export default { props: pageProps };
 </script>
 
 <script setup>
-const projects = [
-  'rleroi/chip8-vue',
-  'rleroi/go-hash',
-  'rleroi/webhook-router',
-  'rleroi/simpledi',
-  'rleroi/stremio-laravel',
-  'rleroi/vuelaraveldemo',
-
-];
 </script>
 
 <style scoped>
