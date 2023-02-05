@@ -30,20 +30,20 @@ export async function onRequestPost(context) {
             to: [
               {
                 email: context.env.CONTACT_EMAIL_TO,
-                name: 'Mya Ink',
+                name: 'ITBazen.com',
               },
             ],
           },
         ],
         from: {
           email: context.env.CONTACT_EMAIL_FROM,
-          name: 'Mya Ink Contactformulier',
+          name: 'ITBazen.com Contactformulier',
         },
         reply_to: {
           email: formData.get('address'),
           name: formData.get('name'),
         },
-        subject: 'Mya Ink Contactformulier',
+        subject: 'ITBazen.com Contactformulier',
         content: [
           {
             type: 'text/html',
@@ -64,6 +64,7 @@ export async function onRequestPost(context) {
     });
 
     if (res.ok) {
+      console.log('RESULT', await res?.text());
       return new Response('OK', {status: 202});
     } else {
       console.error(await res?.json());
