@@ -12,9 +12,11 @@ export const client = createClient({
 export const state = {};
 
 export async function fetchPages() {
+  if(!state?.pages?.length) {
     state.pages = await client.getEntries({
       content_type: 'page',
     });
+  }
 }
 
 export function getPageBySlug(slug) {
