@@ -44,13 +44,15 @@
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Hire me</Link>
         </div>
-        <button aria-label="Menu" class="inline lg:hidden align-middle" @click="openMenu(true)">
-          <svg class="fill-white/50" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            aria-hidden="true" focusable="false">
-            <rect x="4" y="7.5" width="16" height="1.5"></rect>
-            <rect x="4" y="15" width="16" height="1.5"></rect>
-          </svg>
-        </button>
+        <div class="flex lg:hidden">
+          <button aria-label="Menu" class="ml-auto inline align-middle" @click="openMenu(true)">
+            <svg class="fill-white/50" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              aria-hidden="true" focusable="false">
+              <rect x="4" y="7.5" width="16" height="1.5"></rect>
+              <rect x="4" y="15" width="16" height="1.5"></rect>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
