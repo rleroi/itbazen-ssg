@@ -64,12 +64,12 @@ async function sendMail() {
       body: formData,
     });
 
-    for(const [key, value] of Object.entries(state.mail)) {
-      state.mail[key] = null;
-    }
-
     if (!res.ok) {
       throw new Error(await res?.text());
+    }
+
+    for(const [key, value] of Object.entries(state.mail)) {
+      state.mail[key] = null;
     }
 
     form.value.reset();
