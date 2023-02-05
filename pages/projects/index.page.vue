@@ -54,7 +54,7 @@
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0">
         <img class="rounded-sm" alt="Chip8 Emulator & debugger in VueJS"
-          src="https://user-images.githubusercontent.com/6817390/158575964-4ae178c4-94f1-42bb-98ae-0420bbf435f1.png" />
+          src="https://user-images.githubusercontent.com/6817390/216839020-0aa3105c-8e85-4516-a7d9-7cb9e871c4d1.png" />
       </div>
     </div>
 
