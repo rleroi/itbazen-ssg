@@ -50,7 +50,7 @@ const state = reactive({
   }
 });
 
-function sendMail() {
+async function sendMail() {
   let formData = new FormData();
   for(const [key, value] of Object.entries(state.mail)) {
     if (value) {
@@ -59,7 +59,7 @@ function sendMail() {
   }
 
   try {
-    fetch('/api/contact', {
+    let res = await fetch('/api/contact', {
       method: 'POST',
       body: formData,
     });
@@ -69,6 +69,9 @@ function sendMail() {
     }
     form.value.reset();
     state.sent = true;
+    if (!res.ok) {
+      throw new Error(await res?.text());
+    }
   } catch(e) {
     console.error(e.message);
     window.alert('Something went wrong, try again later or send an email to info@itbazen.com');
