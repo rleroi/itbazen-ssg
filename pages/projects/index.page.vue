@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="mt-auto">
-          <h5 class="text-xl mb-4">Technologies</h5>
+          <h5 class="text-xl my-4">Technologies</h5>
           <div class="justify-start flex space-x-4">
             <div class="text-center"><svg class="inline" width="64" height="64" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 128 128">
@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="mt-auto">
-          <h5 class="text-xl mb-4">Technologies</h5>
+          <h5 class="text-xl my-4">Technologies</h5>
           <div class="justify-start flex space-x-4">
             <div class="text-center"><svg class="inline" width="64" height="64" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 128 128">
